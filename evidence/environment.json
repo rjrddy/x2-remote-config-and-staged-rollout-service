@@ -1,0 +1,7 @@
+{
+  "platform": "macOS-15.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.2",
+  "command": "make lint test bench",
+  "exit_code": 0,
+  "elapsed_seconds": 0.760047197341919
+}

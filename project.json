@@ -1,0 +1,26 @@
+{
+  "id": "X2",
+  "name": "Remote config and staged rollout service",
+  "problem": "Serve config to clients with staged rollout, kill switch and rollback; SDK client with offline cache.",
+  "results": [
+    [
+      "Synthetic clients evaluated",
+      "clients_evaluated",
+      ""
+    ],
+    [
+      "Clients enabled at 50 percent rollout",
+      "enabled_at_50_percent",
+      ""
+    ],
+    [
+      "Offline scenarios passed",
+      "offline_scenarios_passed",
+      ""
+    ]
+  ],
+  "diagram": "VersionedConfig --> StableSHA256Cohort --> FastAPI --> SDKCache --> ExpiryFailClosed",
+  "limits": "Original Python service and SDK with deterministic cohorts, rollback and kill switch. Versions are copied and content-addressed in memory; persistence and authenticated administration are not implemented. Network faults use real HTTP client transports with injected connection failures. Offline cached configuration remains usable for at most five seconds, so an offline client cannot observe a kill switch immediately; expiry fails closed. Existing clients refresh on get rather than background polling. See evidence/scenarios.json for rollback, cache, expiry and online kill-switch results.",
+  "next": "Add persistent version storage, signed configurations, authenticated publishing and background refresh.",
+  "status": "done"
+}

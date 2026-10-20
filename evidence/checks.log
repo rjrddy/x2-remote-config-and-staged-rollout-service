@@ -1,0 +1,15 @@
+/Users/rajreddy/dev/outreach/projects/x2-remote-config-and-staged-rollout-service/.venv/bin/python -m ruff check src tests
+All checks passed!
+/Users/rajreddy/dev/outreach/projects/x2-remote-config-and-staged-rollout-service/.venv/bin/python -m ruff format --check src tests
+2 files already formatted
+/Users/rajreddy/dev/outreach/projects/x2-remote-config-and-staged-rollout-service/.venv/bin/python -m pytest -q
+...                                                                      [100%]
+3 passed in 0.27s
+/Users/rajreddy/dev/outreach/projects/x2-remote-config-and-staged-rollout-service/.venv/bin/python src/main.py > evidence/bench.json
+{
+  "clients_evaluated": 1000,
+  "enabled_at_50_percent": 472,
+  "rollback_verified": true,
+  "offline_scenarios_passed": 3,
+  "kill_switch_verified": true
+}

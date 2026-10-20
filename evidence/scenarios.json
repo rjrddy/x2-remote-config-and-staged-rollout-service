@@ -1,0 +1,31 @@
+{
+  "initial": {
+    "version": "a6838abaec3e674861cb327c02e88cbe8023f08c7aece36344c1450218bcd66f",
+    "enabled": false,
+    "value": null,
+    "max_age_seconds": 5,
+    "source": "network"
+  },
+  "offline_cached": {
+    "version": "a6838abaec3e674861cb327c02e88cbe8023f08c7aece36344c1450218bcd66f",
+    "enabled": false,
+    "value": null,
+    "max_age_seconds": 5,
+    "source": "cache"
+  },
+  "expired": {
+    "enabled": false,
+    "value": null,
+    "version": null,
+    "source": "fail-closed"
+  },
+  "kill_switch": {
+    "version": "a6838abaec3e674861cb327c02e88cbe8023f08c7aece36344c1450218bcd66f",
+    "enabled": false,
+    "value": null,
+    "max_age_seconds": 5,
+    "source": "network"
+  },
+  "old_version": "a6838abaec3e674861cb327c02e88cbe8023f08c7aece36344c1450218bcd66f",
+  "new_version": "ccc0c533da3bf1424b8f0b0f46bb049dbda38e2a26d0cee48c146d84b5f7e077"
+}

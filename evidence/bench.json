@@ -1,0 +1,7 @@
+{
+  "clients_evaluated": 1000,
+  "enabled_at_50_percent": 472,
+  "rollback_verified": true,
+  "offline_scenarios_passed": 3,
+  "kill_switch_verified": true
+}
